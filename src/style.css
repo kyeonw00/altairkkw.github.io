@@ -289,6 +289,26 @@ a:focus {
 .bio {
   display: flex;
   margin-bottom: var(--spacing-16);
+  transition: box-shadow .15s;
+  border: 1px solid #858fa0;
+  max-width: 50%;
+  min-width: 100px;
+  border-radius: 1px;
+  padding: 12px;
+}
+
+.bio:hover {
+  box-shadow: 0px 5px 5px #2b2f36;
+}
+
+.bio-title {
+  color: #111;
+  line-height: 1.4;
+  letter-spacing: -0.03em;
+  position: relative;
+  font-size: 1.2em;
+  font-weight: 300;
+  text-transform: capitalize;
 }
 
 .bio p {
@@ -298,8 +318,8 @@ a:focus {
 .bio-avatar {
   margin-right: var(--spacing-4);
   margin-bottom: var(--spacing-0);
-  min-width: 50px;
-  border-radius: 100%;
+  min-width: 100px;
+  border-radius: 0%;
 }
 
 .blog-post header h1 {
