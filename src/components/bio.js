@@ -44,11 +44,13 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          <strong>About Me</strong><br/><br/>
+          Game developer using Unity and Unreal engine. Working as an Indie developer and at Buff Studio.<br/>
+          Two projects are published that I've participated as a programmer.<br/>
           {` `}
-          <a href={`https://twitter.com/${social?.twitter || ``}`}>
+          {/* <a href={`https://twitter.com/${social?.twitter || ``}`}>
             You should follow them on Twitter
-          </a>
+          </a> */}
         </p>
       )}
     </div>
