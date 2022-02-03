@@ -25,6 +25,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
+      <Bio />
       <Seo title="All posts" />
       <h2>Recent Posts</h2>
       <ol style={{ listStyle: `none` }}>
@@ -59,7 +60,6 @@ const BlogIndex = ({ data, location }) => {
           )
         })}
       </ol>
-      <Bio />
     </Layout>
   )
 }
